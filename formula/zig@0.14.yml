@@ -1,0 +1,6 @@
+summary: a general-purpose programming language and toolchain for maintaining robust, optimal and reusable software
+webpage: https://ziglang.org/
+bin-url: https://ziglang.org/download/0.14.1/zig-aarch64-macos-0.14.1.tar.xz
+bin-sha: 39f3dc5e79c22088ce878edc821dedb4ca5a1cd9f5ef915e9b3cc3053e8faefa
+version: 0.14.1
+unpackd: bin

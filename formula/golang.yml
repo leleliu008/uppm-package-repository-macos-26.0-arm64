@@ -1,0 +1,5 @@
+summary: Open source programming language to build simple/reliable/efficient software
+webpage: https://go.dev/
+version: 1.25.5
+bin-url: https://go.dev/dl/go1.25.5.darwin-arm64.tar.gz
+bin-sha: bed8ebe824e3d3b27e8471d1307f803fc6ab8e1d0eb7a4ae196979bd9b801dd3

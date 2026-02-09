@@ -1,0 +1,17 @@
+summary: a toolset that enables developers to create and update different apps for Android devices
+webpage: https://developer.android.com/studio#command-tools
+version: 9477386
+bin-url: https://dl.google.com/android/repository/commandlinetools-mac-9477386_latest.zip
+bin-sha: 2072ffce4f54cdc0e6d2074d2f381e7e579b7d63e915c220b96a7db95b2900ee
+dep-pkg: jdk17 unzip
+unpackd: cmdline-tools/latest
+install: |
+    yes | cmdline-tools/latest/bin/sdkmanager 'platforms;android-30'
+    yes | cmdline-tools/latest/bin/sdkmanager 'build-tools;30.0.3'
+    yes | cmdline-tools/latest/bin/sdkmanager 'platform-tools'
+
+export: |
+    export ANDROID_HOME="$PKG_INSTALL_DIR"
+    export PATH="\$ANDROID_HOME/cmdline-tools/latest/bin:\$PATH"
+    export PATH="\$ANDROID_HOME/platform-tools:\$PATH"
+    export PATH="\$ANDROID_HOME/build-tools/30.0.3:\$PATH"
