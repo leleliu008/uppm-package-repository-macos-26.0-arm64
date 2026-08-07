@@ -5,7 +5,7 @@ set -e
 if [ -d xcpkg-formula-repository-official-core ] ; then
     git -C xcpkg-formula-repository-official-core pull
 else
-    git clone --depth=1 https://github.com/leleliu008/xcpkg-formula-repository-official-core
+    git clone --depth=1 https://ghfast.top/https://github.com/leleliu008/xcpkg-formula-repository-official-core
 fi
 
 cd xcpkg-formula-repository-official-core/formula
@@ -33,7 +33,7 @@ SWIFT_PKGS2="${SWIFT_PKGS2#,}"
 
 SED="sed -e s|^-||"
 
-for item in chisel d8 fortune psutils redex koka stack llvm@16 $SWIFT_PKGS
+for item in chisel d8 fortune psutils golang redex koka stack llvm@16 $SWIFT_PKGS
 do
     SED="$SED -e /^$item$/d"
 done
